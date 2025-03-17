@@ -34,7 +34,7 @@ def main():
     st.set_page_config(page_title="Analyse des Marchés Financiers", layout="wide")
 
     # Load datasets
-    market_data = load_data("class-s/csv/end.csv")
+    market_data = load_data("class-s/CSV/end.csv")
     opcvm_data = load_opcvm_data("obligataire/cleaned_opcvm.xlsx")
     
     tunindex_mnemos = set(market_data["tunindex20"]["VALEUR"].tolist())
